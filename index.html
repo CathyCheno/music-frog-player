@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=], initial-scale=1.0">
+  <title>Music Player</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/ef67e51a4e.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <div class="container">
+    <div class="music-player">
+      <div class="left-player">
+        <img src="images/02-11拷貝.png" alt="record" class="record">
+        <h2 id="title">Song Name</h2>
+        <div class="silde-container">
+            <i class="fas fa-volume-down"></i>
+            <input type="range" min="0" max="100" value="50" class="slider">
+            <i class="fas fa-volume-up"></i>
+        </div>
+        <div class="controls">
+          <button class="previous" id="previous"><i class="fas fa-step-backward"></i></button>
+          <button class="play-pause" id="play-pause"><i class="fas fa-play"></i></button>
+          <button class="next" id="next"><i class="fas fa-step-forward"></i></button>
+        </div>
+      </div>
+      <div class="right-playlist">
+        <h2>Playlist</h2>
+        <ul class="song-list">
+          <li data-src="music/beautiful-moments.mp3" data-name="Beautiful moments" data-index="0"><span>Beautiful moments</span><span>02:19</span></li>
+          <li data-src="music/morning.mp3" data-name="Morning" data-index="1"><span>Morning</span><span>01:58</span></li>
+          <li data-src="music/inspiring-and-motivational-technology.mp3" data-name="Inspiring-and-motivational-technology" data-index="2"><span>inspiring-and-motivational-technology</span><span>02:01</span></li>
+          <li data-src="music/Airborne - Quincas Moreira.mp3" data-name="Airborne - Quincas Moreira" data-index="3"><span>Airborne - Quincas Moreira</span><span>04:06</span></li>
+          <li data-src="music/deep-chill.mp3" data-name="Deep-chill" data-index="4"><span>Deep-chill</span><span>02:10</span></li>
+          <li data-src="music/this-science.mp3" data-name="This-science" data-index="5"><span>This-science</span><span>01:28</span></li>
+          <li data-src="music/Faith.mp3" data-name="Faith" data-index="6"><span>Faith</span><span>03:26</span></li>
+        </ul>
+        <audio src="" id="audio"></audio>
+      </div>
+    </div>
+  </div>
+
+
+  <script src="script.js"></script>
+</body>
+
+</html>
