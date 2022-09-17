@@ -1,4 +1,4 @@
-# music-frog-player
+# JavaScript-music-frog-player
 
 ### Purpose: 
 
